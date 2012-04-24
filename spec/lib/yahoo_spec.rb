@@ -4,7 +4,7 @@ describe Yahoo do
   let(:symbols) { ["GOOG", "AAPL", "C"] }
 
   def csv
-    File.read './spec/fixtures/stocks.csv'
+    CSV.parse( File.read './spec/fixtures/stocks.csv' )
   end
 
   describe ".get_stocks" do
