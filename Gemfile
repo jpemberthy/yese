@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'rails-api'
 gem 'sqlite3'
-gem 'jquery-rails'
+gem 'httparty'
 
 group :development, :test do
   gem 'hirb'
