@@ -10,5 +10,5 @@ group :development, :test do
   gem 'wirble'
   gem 'rspec-rails'
   # Instructions: http://stackoverflow.com/a/8268091/217956
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  # gem 'ruby-debug19', :require => 'ruby-debug'
 end
