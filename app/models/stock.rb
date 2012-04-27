@@ -1,7 +1,6 @@
 class Stock < ActiveRecord::Base
-  attr_accessible :last_price, :last_variation, :name, :symbol
-
-  validates_presence_of :symbol, :last_price, :last_variation
-  validates_numericality_of :last_price, :greater_than => 0.0
-  validates_numericality_of :last_variation
+  attr_accessible :close_date, :close_price, :name, :symbol, :variation
+  validates_presence_of :symbol, :close_price, :variation
+  validates_numericality_of :close_price, :greater_than => 0.0
+  validates_numericality_of :variation
 end

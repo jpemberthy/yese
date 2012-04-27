@@ -3,8 +3,9 @@ class CreateStocks < ActiveRecord::Migration
     create_table :stocks do |t|
       t.string :symbol
       t.string :name
-      t.float :last_price
-      t.float :last_variation
+      t.float :close_price
+      t.float :variation
+      t.date :close_date
 
       t.timestamps
     end

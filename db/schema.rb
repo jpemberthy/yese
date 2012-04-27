@@ -11,15 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120424002419) do
+ActiveRecord::Schema.define(:version => 20120426235830) do
 
   create_table "stocks", :force => true do |t|
     t.string   "symbol"
     t.string   "name"
-    t.float    "last_price"
-    t.float    "last_variation"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.float    "close_price"
+    t.float    "variation"
+    t.date     "close_date"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end
