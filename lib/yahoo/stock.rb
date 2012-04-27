@@ -18,5 +18,15 @@ module Yahoo
     def date
       Date.strptime @date, "%m/%d/%Y"
     end
+
+    def attrs
+      {
+        symbol: symbol,
+        name:   name,
+        variation: variation,
+        close_price: price,
+        close_date: date
+      }
+    end
   end
 end
